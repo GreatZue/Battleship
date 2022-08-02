@@ -1,4 +1,3 @@
-window.app = {}
 var shipPart1 = 3;
 var shipPart2 = 4;
 var shipPart3 = 5;
