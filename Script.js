@@ -1,3 +1,4 @@
+window.app = {}
 var shipPart1 = 3;
 var shipPart2 = 4;
 var shipPart3 = 5;
@@ -10,19 +11,20 @@ var isSunk = false;
 
 function playGame() {
 while(hits < 3) {
-    guess = window.prompt("Enter a number 1-7!");
+    guess = prompt("Enter a number 1-7!");
     guesses++
 
     if(guess >= shipPart1 && guess <= shipPart3) {
-        window.alert("Nice job, you hit them!");
+    alert("Nice job, you hit them!");
         hits++
     }
     else {
-        window.alert("Oh no, you missed!");
+    alert("Oh no, you missed!");
     }
 }
 if (hits == 3) {
     isSunk = true;
 }
-window.alert("Congratulations, here is your score: " + hits + "/n" + guesses);
+alert("Congratulations, here is your score: " + hits + "/n" + guesses);
 }
+
